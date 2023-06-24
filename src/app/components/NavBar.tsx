@@ -1,0 +1,37 @@
+import React from "react";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+
+type Props = {};
+
+const NavBar = (props: Props) => {
+  const links = [
+    {
+      for: "linkedin",
+      icon: <FaLinkedin size={32} color="white" />,
+      href: "https://www.linkedin.com/in/jwatsoncode/",
+    },
+    {
+      for: "github",
+      icon: <FaGithub size={32} color="white" />,
+      href: "https://github.com/Jexxer",
+    },
+  ];
+  return (
+    <nav className="bg-neutral-700 drop-shadow-sm">
+      <div className="flex justify-between p-5 items-center h-16">
+        <h2 className="font-bold text-white text-2xl">Jesse Watson</h2>
+        <div className="flex">
+          {links.map((link) => (
+            <div className="mx-2">
+              <a href={link.href} target="_blank">
+                <div>{link.icon}</div>
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default NavBar;
