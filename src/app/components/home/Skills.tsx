@@ -1,5 +1,5 @@
 const Skills = () => {
-  return <div className="w-1/2">right side</div>;
+  return <div className=""></div>;
 };
 
 export default Skills;
