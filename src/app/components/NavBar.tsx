@@ -6,11 +6,13 @@ type Props = {};
 const NavBar = (props: Props) => {
   const links = [
     {
+      id: 1,
       for: "linkedin",
       icon: <FaLinkedin size={32} color="white" />,
       href: "https://www.linkedin.com/in/jwatsoncode/",
     },
     {
+      id: 2,
       for: "github",
       icon: <FaGithub size={32} color="white" />,
       href: "https://github.com/Jexxer",
@@ -22,7 +24,7 @@ const NavBar = (props: Props) => {
         <h2 className="font-bold text-white text-2xl">Jesse Watson</h2>
         <div className="flex">
           {links.map((link) => (
-            <div className="mx-2">
+            <div key={link.id} className="mx-2">
               <a href={link.href} target="_blank">
                 <div>{link.icon}</div>
               </a>
