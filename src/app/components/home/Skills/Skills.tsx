@@ -2,11 +2,6 @@
 import { useState } from "react";
 import { Tab } from "@headlessui/react";
 
-type Item = {
-  id: number;
-  title: string;
-};
-
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
