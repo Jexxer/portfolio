@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Tilt from "react-parallax-tilt";
 
 const AboutMe = () => {
   return (
-    <div className="w-full md:w-1/2 lg:w-1/2 h-full">
+    <div className="w-full h-full">
       <MyInfo />
       <Introduction />
     </div>
@@ -11,7 +12,7 @@ const AboutMe = () => {
 
 const MyInfo = () => {
   return (
-    <section className="rounded-lg m-3 p-5 flex flex-1 flex-col lg:flex-row bg-neutral-500">
+    <section className="rounded-lg m-3 p-5 flex flex-1 flex-col lg:flex-row bg-neutral-500 shadow-md">
       <div className="rounded-full place-self-center overflow-hidden w-[120px] h-[120px] relative">
         <Image
           src="/headshot.jpg"
