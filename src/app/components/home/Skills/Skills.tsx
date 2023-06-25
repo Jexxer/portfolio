@@ -2,6 +2,11 @@
 import { useState } from "react";
 import { Tab } from "@headlessui/react";
 
+type Item = {
+  id: number;
+  title: string;
+};
+
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
@@ -125,7 +130,9 @@ export default function Example() {
             >
               <ul>
                 {skills.map((item) => (
-                  <li className="text-white">&middot; {item!.title}</li>
+                  <li key={item!.id} className="text-white">
+                    &middot; {item!.title}
+                  </li>
                 ))}
               </ul>
             </Tab.Panel>
