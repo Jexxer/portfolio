@@ -33,27 +33,68 @@ export default function Example() {
     Skills: [
       {
         id: 1,
-        title: "Is tech making coffee better or worse?",
+        title: "Git",
       },
       {
         id: 2,
-        title: "The most innovative things happening in coffee",
+        title: "Azure DevOps",
+      },
+      {
+        id: 3,
+        title: "Django",
+      },
+      {
+        id: 4,
+        title: "React",
+      },
+      {
+        id: 5,
+        title: "Next.js",
+      },
+      {
+        id: 6,
+        title: "Express",
+      },
+      {
+        id: 7,
+        title: "Node.js",
+      },
+      {
+        id: 8,
+        title: "MongoDB",
+      },
+      {
+        id: 9,
+        title: "PostgreSQL",
+      },
+      {
+        id: 10,
+        title: "Mobile First development",
       },
     ],
-    Additional: [
+    Tools: [
       {
         id: 1,
-        title: "Ask Me Anything: 10 answers to your questions about coffee",
+        title: "Restful API's",
       },
       {
         id: 2,
-        title: "The worst advice we've ever heard about coffee",
+        title: "Bootstrap",
+      },
+      ,
+      {
+        id: 3,
+        title: "MUI",
+      },
+      {
+        id: 4,
+        title: "ChakraUI",
       },
     ],
   });
 
   return (
-    <div className="w-full m-3 sm:px-0">
+    <div className="lg:w-full m-3 sm:px-0">
       <Tab.Group>
         <Tab.List className="flex space-x-1 rounded-xl bg-neutral-600 p-1">
           {Object.keys(categories).map((category) => (
@@ -84,9 +125,7 @@ export default function Example() {
             >
               <ul>
                 {skills.map((item) => (
-                  <li className="text-sm font-medium leading-5 text-white">
-                    &middot; {item.title}
-                  </li>
+                  <li className="text-white">&middot; {item!.title}</li>
                 ))}
               </ul>
             </Tab.Panel>
