@@ -7,6 +7,24 @@ const NavBar = (props: Props) => {
   const links = [
     {
       id: 1,
+      name: "Projects",
+      href: "/projects",
+    },
+    {
+      id: 2,
+      name: "Education",
+      href: "/education",
+    },
+    {
+      id: 3,
+      name: "Work History",
+      href: "/work-history",
+    },
+  ];
+
+  const socials = [
+    {
+      id: 1,
       for: "linkedin",
       icon: <FaLinkedin size={32} color="white" />,
       href: "https://www.linkedin.com/in/jwatsoncode/",
@@ -23,7 +41,7 @@ const NavBar = (props: Props) => {
       <div className="flex justify-between p-5 items-center h-16">
         <h2 className="font-bold text-white text-2xl">Jesse Watson</h2>
         <div className="flex">
-          {links.map((link) => (
+          {socials.map((link) => (
             <div key={link.id} className="mx-2">
               <a href={link.href} target="_blank">
                 <div>{link.icon}</div>
