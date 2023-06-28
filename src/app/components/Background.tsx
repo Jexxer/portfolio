@@ -24,7 +24,7 @@ const Background = () => {
 
   return (
     <Particles
-      className="absolute w-screen h-screen -z-10"
+      className="absolute w-screen h-screen -z-10 bg-black"
       id="tsparticles"
       // url="http://foo.bar/particles.json"
       init={particlesInit}
