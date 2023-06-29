@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Tilt from "react-parallax-tilt";
 
@@ -12,25 +13,26 @@ const AboutMe = () => {
 
 const MyInfo = () => {
   return (
-    <section className="rounded-lg m-3 p-5 flex flex-1 flex-col lg:flex-row bg-neutral-500 shadow-md">
-      <div className="rounded-full place-self-center overflow-hidden w-[120px] h-[120px] relative">
-        <Image
-          src="/headshot.jpg"
-          fill
-          alt="Jesse Watson headshot"
-          sizes="(max-width: 120px) (max-height: 120px)"
-        />
-      </div>
-
-      <div className="flex flex-1 items-center justify-center mb-4">
-        <div className="flex flex-col">
-          <span className="text-bold text-white text-2xl">Jesse Watson</span>
-          <span className="text-bold text-white text-xs place-self-center">
-            Software Engineer
-          </span>
+    <Tilt>
+      <section className="rounded-lg m-3 p-5 flex flex-1 flex-col lg:flex-row bg-neutral-500 shadow-md">
+        <div className="rounded-full place-self-center overflow-hidden w-[120px] h-[120px] relative">
+          <Image
+            src="/headshot.jpg"
+            fill
+            alt="Jesse Watson headshot"
+            sizes="(max-width: 120px) (max-height: 120px)"
+          />
         </div>
-      </div>
-    </section>
+        <div className="flex flex-1 items-center justify-center mb-4">
+          <div className="flex flex-col">
+            <span className="text-bold text-white text-2xl">Jesse Watson</span>
+            <span className="text-bold text-white text-xs place-self-center">
+              Software Engineer
+            </span>
+          </div>
+        </div>
+      </section>
+    </Tilt>
   );
 };
 
