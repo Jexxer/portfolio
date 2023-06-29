@@ -12,9 +12,8 @@ const ContentCard = (props: Props) => {
         "py-4",
         "overflow-y-hidden",
         "flex justify-center",
-        "md:h-[calc(100%-4rem)] md:items-center",
-        "lg:h-screen lg:items-center",
-        "snap-start"
+        "md:h-[calc(100%-4rem)] md:items-center md:snap-start",
+        "lg:h-screen lg:items-center md:snap-start"
       )}
     >
       <div className="flex justify-center pt-16">

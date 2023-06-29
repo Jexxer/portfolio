@@ -8,8 +8,8 @@ const App = () => {
       <Background />
       <NavBar />
       <ContentCard />
-      <div className="w-full h-screen  snap-start"></div>
-      <div className="w-full h-screen snap-start"></div>
+      <div className="w-full h-screen md:snap-start lg:snap-start"></div>
+      <div className="w-full h-screen md:snap-start lg:snap-start"></div>
     </main>
   );
 };
