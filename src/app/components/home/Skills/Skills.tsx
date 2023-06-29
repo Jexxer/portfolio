@@ -1,10 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Tab } from "@headlessui/react";
-
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
-}
+import classNames from "@/utils/classNames";
 
 export default function Example() {
   let [categories] = useState({

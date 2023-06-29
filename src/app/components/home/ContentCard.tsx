@@ -1,16 +1,36 @@
 import React from "react";
 import AboutMe from "./AboutMe";
 import Skills from "./Skills/Skills";
+import classNames from "@/utils/classNames";
 
 type Props = {};
 
 const ContentCard = (props: Props) => {
   return (
-    <div className="lg:h-[calc(100%-4rem)] md:h-[calc(100%-4rem)] flex justify-center md:items-center lg:items-center overflow-y-hidden py-4">
-      <div className="max-w-[calc(100%-32px)] md:w-3/4 lg:w-1/2 min-h-2/3 bg-neutral-700/80 rounded-md backdrop-blur-sm max-h-full overflow-y-auto">
-        <div className="flex flex-col lg:flex-row h-full w-full">
-          <AboutMe />
-          <Skills />
+    <div
+      className={classNames(
+        "py-4",
+        "overflow-y-hidden",
+        "flex justify-center",
+        "md:h-[calc(100%-4rem)] md:items-center",
+        "lg:h-screen lg:items-center",
+        "snap-start"
+      )}
+    >
+      <div className="flex justify-center pt-16">
+        <div
+          className={classNames(
+            "max-w-[calc(100%-32px)] min-h-2/3 max-h-[calc(100vh-6rem)] overflow-y-scroll",
+            "rounded-md",
+            "bg-neutral-700/80 backdrop-blur-sm",
+            "md:w-3/4 md:overflow-auto",
+            "lg:w-1/2 lg:overflow-auto"
+          )}
+        >
+          <div className="flex flex-col lg:flex-row h-full w-full">
+            <AboutMe />
+            <Skills />
+          </div>
         </div>
       </div>
     </div>

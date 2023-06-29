@@ -37,7 +37,7 @@ const NavBar = (props: Props) => {
     },
   ];
   return (
-    <nav className="bg-neutral-700 drop-shadow-sm sticky top-0 z-10">
+    <nav className="bg-neutral-700 drop-shadow-sm fixed top-0 left-0 z-50 w-full">
       <div className="flex justify-between p-5 items-center h-16">
         <h2 className="font-bold text-white text-2xl">Jesse Watson</h2>
         <div className="flex">

@@ -4,10 +4,12 @@ import Background from "./components/Background";
 
 const App = () => {
   return (
-    <main className="w-full h-screen">
+    <main className="w-full h-screen snap-mandatory snap-y overflow-scroll">
       <Background />
       <NavBar />
       <ContentCard />
+      <div className="w-full h-screen  snap-start"></div>
+      <div className="w-full h-screen snap-start"></div>
     </main>
   );
 };
