@@ -19,11 +19,11 @@ const ContentCard = (props: Props) => {
       <div className="flex justify-center pt-16">
         <div
           className={classNames(
-            "max-w-[calc(100%-32px)] min-h-2/3 max-h-[calc(100vh-6rem)] overflow-y-scroll",
+            "max-w-[calc(100%-32px)] min-h-2/3 h-full",
             "rounded-md",
             "bg-neutral-700/80 backdrop-blur-sm",
-            "md:w-3/4 md:overflow-auto",
-            "lg:w-1/2 lg:overflow-auto"
+            "md:w-3/4",
+            "lg:w-1/2"
           )}
         >
           <div className="flex flex-col lg:flex-row h-full w-full">
