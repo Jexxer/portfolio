@@ -1,16 +1,17 @@
-import ContentCard from "./components/home/ContentCard";
-import NavBar from "./components/NavBar";
+import Hero from "./components/Hero/Hero";
 import Background from "./components/Background";
 
 const App = () => {
   return (
-    <main className="w-full h-screen snap-mandatory snap-y overflow-scroll">
-      <Background />
-      <NavBar />
-      <ContentCard />
-      <div className="w-full h-screen md:snap-start lg:snap-start"></div>
-      <div className="w-full h-screen md:snap-start lg:snap-start"></div>
-    </main>
+    <div className="w-full">
+      <div id="home-content">
+        {/* <Background /> */}
+        {/* <NavBar /> */}
+        {/* <ContentCard /> */}
+        <Hero />
+        <div className="h-screen bg-transparent"></div>
+      </div>
+    </div>
   );
 };
 

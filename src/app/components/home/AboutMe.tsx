@@ -14,7 +14,7 @@ const AboutMe = () => {
 const MyInfo = () => {
   return (
     <Tilt>
-      <section className="rounded-lg m-3 p-5 flex flex-1 flex-col lg:flex-row bg-neutral-500 shadow-md">
+      <section className="rounded-lg m-3 p-5 flex flex-1 flex-col lg:flex-row bg-theme-secondary shadow-md">
         <div className="rounded-full place-self-center overflow-hidden w-[120px] h-[120px] relative">
           <Image
             src="/headshot.jpg"
@@ -25,8 +25,8 @@ const MyInfo = () => {
         </div>
         <div className="flex flex-1 items-center justify-center mb-4">
           <div className="flex flex-col">
-            <span className="text-bold text-white text-2xl">Jesse Watson</span>
-            <span className="text-bold text-white text-xs place-self-center">
+            <span className="text-theme-text text-2xl">Jesse Watson</span>
+            <span className="text-theme-text text-bold text-xs place-self-center">
               Software Engineer
             </span>
           </div>

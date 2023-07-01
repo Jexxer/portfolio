@@ -1,4 +1,5 @@
 import "./globals.css";
+import Background from "./components/Background";
 
 export const metadata = {
   title: "Jesse Watson Portfolio",
@@ -12,7 +13,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="relative">
+        <Background />
+        {children}
+      </body>
     </html>
   );
 }
