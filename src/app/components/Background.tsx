@@ -63,7 +63,7 @@ const Background = () => {
               enable: true,
               area: 800,
             },
-            value: 80,
+            value: 20,
           },
           opacity: {
             animation: {
@@ -76,15 +76,16 @@ const Background = () => {
             },
             value: {
               min: 0,
-              max: 0.5,
+              max: 0.25,
             },
           },
           shape: {
             type: ["image"],
-            image: {
-              src: "https://github.com/Jexxer/portfolio/blob/master/public/text/jslog.png?raw=true",
-              replace_color: true,
-            },
+            image: [
+              {
+                src: "https://img.freepik.com/free-vector/start_53876-25533.jpg?w=2000",
+              },
+            ],
             // options: {
             //   char: {
             //     value: {
@@ -99,7 +100,7 @@ const Background = () => {
             // },
           },
           size: {
-            value: { min: 1, max: 5 },
+            value: 100,
           },
         },
       }}
