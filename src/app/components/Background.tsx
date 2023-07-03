@@ -94,8 +94,8 @@ const Background = () => {
               },
               {
                 src: "https://github.com/Jexxer/portfolio/blob/master/public/text/pylog.png?raw=true",
-                width: 91,
-                height: 34,
+                width: 170,
+                height: 30,
               },
             ],
           },
