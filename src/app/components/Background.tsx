@@ -84,15 +84,23 @@ const Background = () => {
             image: [
               {
                 src: "https://github.com/Jexxer/portfolio/blob/master/public/text/golog.png?raw=true",
+                width: 150,
+                height: 35,
               },
               {
                 src: "https://github.com/Jexxer/portfolio/blob/master/public/text/javalog.png?raw=true",
+                width: 247,
+                height: 34,
               },
               {
                 src: "https://github.com/Jexxer/portfolio/blob/master/public/text/jslog.png?raw=true",
+                width: 162,
+                height: 29,
               },
               {
                 src: "https://github.com/Jexxer/portfolio/blob/master/public/text/pylog.png?raw=true",
+                width: 91,
+                height: 34,
               },
             ],
             // options: {
@@ -109,7 +117,7 @@ const Background = () => {
             // },
           },
           size: {
-            value: 150,
+            value: 50,
           },
         },
       }}
