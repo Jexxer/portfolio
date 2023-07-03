@@ -76,14 +76,23 @@ const Background = () => {
             },
             value: {
               min: 0,
-              max: 0.25,
+              max: 0.4,
             },
           },
           shape: {
             type: ["image"],
             image: [
               {
-                src: "https://img.freepik.com/free-vector/start_53876-25533.jpg?w=2000",
+                src: "https://github.com/Jexxer/portfolio/blob/master/public/text/golog.png?raw=true",
+              },
+              {
+                src: "https://github.com/Jexxer/portfolio/blob/master/public/text/javalog.png?raw=true",
+              },
+              {
+                src: "https://github.com/Jexxer/portfolio/blob/master/public/text/jslog.png?raw=true",
+              },
+              {
+                src: "https://github.com/Jexxer/portfolio/blob/master/public/text/pylog.png?raw=true",
               },
             ],
             // options: {
@@ -100,7 +109,7 @@ const Background = () => {
             // },
           },
           size: {
-            value: 100,
+            value: 150,
           },
         },
       }}
