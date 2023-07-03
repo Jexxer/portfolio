@@ -12,15 +12,16 @@ const NavBar = (props: Props) => {
       if (!navbar) return;
 
       const currentScrollPosition = window.scrollY;
-      const scrollDown = prevScrollPosition > currentScrollPosition;
-      if (scrollDown) {
-        navbar.classList.remove("-translate-y-16", "shadow-xl");
+      const scrollUp = prevScrollPosition > currentScrollPosition;
+      if (scrollUp) {
+        navbar.classList.remove("-translate-y-16", "transparent");
       } else {
-        navbar.classList.add("-translate-y-16", "shadow-xl");
+        navbar.classList.add("-translate-y-16", "shadow-xl", "bg-theme-bg");
       }
       prevScrollPosition = currentScrollPosition;
       if (currentScrollPosition === 0) {
-        navbar.classList.remove("shadow-xl");
+        navbar.classList.remove("shadow-xl", "bg-theme-bg");
+        navbar.classList.add("transparent");
       }
     };
   }, []);

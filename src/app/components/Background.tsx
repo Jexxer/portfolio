@@ -88,11 +88,6 @@ const Background = () => {
                 height: 35,
               },
               {
-                src: "https://github.com/Jexxer/portfolio/blob/master/public/text/javalog.png?raw=true",
-                width: 247,
-                height: 34,
-              },
-              {
                 src: "https://github.com/Jexxer/portfolio/blob/master/public/text/jslog.png?raw=true",
                 width: 162,
                 height: 29,
@@ -103,18 +98,6 @@ const Background = () => {
                 height: 34,
               },
             ],
-            // options: {
-            //   char: {
-            //     value: {
-            //       0: "h",
-            //       1: "c",
-            //     },
-            //     font: "Verdana",
-            //     style: "",
-            //     weight: 400,
-            //     fill: true,
-            //   },
-            // },
           },
           size: {
             value: 50,

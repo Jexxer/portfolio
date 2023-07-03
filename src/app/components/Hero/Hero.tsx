@@ -1,15 +1,17 @@
 import React from "react";
 import classNames from "@/utils/classNames";
 import FlipImage from "./components/FlipImage";
+import Link from "next/link";
 
 const Hero = () => {
   return (
     <div
       id="hero-container"
       className={classNames(
-        "min-h-screen w-full",
+        "min-h-[calc(100vh-4rem)] w-full",
         "flex flex-col items-center",
-        "relative"
+        "relative",
+        "lg:mt-16"
       )}
     >
       {/* image */}
@@ -26,7 +28,11 @@ const Hero = () => {
           I'm a software engineer specialized in the creation and design of
           exceptional digital experiences Currently, I'm focused on building
           automated penetration testing web tools at{" "}
-          <span className="text-theme-accent font-bold">OnDefend</span>
+          <span className="text-theme-accent font-bold">
+            <Link target="_blank" href="https://ondefend.com/">
+              OnDefend
+            </Link>
+          </span>
         </p>
       </section>
     </div>
