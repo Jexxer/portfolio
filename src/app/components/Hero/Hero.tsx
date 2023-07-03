@@ -19,7 +19,7 @@ const Hero = () => {
       {/* image */}
       <FlipImage />
 
-      <section className="hero-info grid grid-cols-1 gap-3 place-items-center max-w-[1000px]">
+      <section className="hero-info grid grid-cols-1 gap-3 place-items-center max-w-[1000px] pt-8">
         <h1 className="text-theme-text text-5xl font-bold backdrop-blur-sm">
           Jesse Watson
         </h1>

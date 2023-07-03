@@ -84,17 +84,17 @@ const Background = () => {
             image: [
               {
                 src: "https://github.com/Jexxer/portfolio/blob/master/public/text/golog.png?raw=true",
-                width: 150,
-                height: 35,
+                width: 250,
+                height: 30,
               },
               {
                 src: "https://github.com/Jexxer/portfolio/blob/master/public/text/jslog.png?raw=true",
-                width: 162,
-                height: 29,
+                width: 250,
+                height: 30,
               },
               {
                 src: "https://github.com/Jexxer/portfolio/blob/master/public/text/pylog.png?raw=true",
-                width: 170,
+                width: 250,
                 height: 30,
               },
             ],
