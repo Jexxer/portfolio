@@ -97,10 +97,15 @@ const Background = () => {
                 width: 250,
                 height: 30,
               },
+              {
+                src: "https://github.com/Jexxer/portfolio/blob/master/public/text/javalog.png?raw=true",
+                width: 250,
+                height: 30,
+              },
             ],
           },
           size: {
-            value: 50,
+            value: 75,
           },
         },
       }}

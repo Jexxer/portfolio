@@ -9,7 +9,7 @@ const App = () => {
         {/* <Background /> */}
         {/* <ContentCard /> */}
         <Hero />
-        <div className="h-screen bg-transparent p-"></div>
+        <div className="h-screen bg-transparent"></div>
       </div>
     </div>
   );
