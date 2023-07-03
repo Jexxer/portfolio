@@ -1,7 +1,9 @@
+"use client";
 import React from "react";
 import classNames from "@/utils/classNames";
 import FlipImage from "./components/FlipImage";
 import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -19,24 +21,63 @@ const Hero = () => {
       {/* image */}
       <FlipImage />
 
-      <section className="hero-info grid grid-cols-1 gap-3 place-items-center max-w-[1000px] pt-8">
-        <h1 className="text-theme-text text-5xl font-bold backdrop-blur-sm">
-          Jesse Watson
-        </h1>
-        <h2 className="text-theme-text text-2xl font-bold backdrop-blur-sm">
-          Software Engineer
-        </h2>
-        <p className="text-theme-text max-w-[586px] backdrop-blur-sm text-center">
-          I&apos;m a software engineer specialized in the creation and design of
-          exceptional digital experiences. Currently, I&apos;m focused on
-          building automated penetration testing web tools at{" "}
-          <span className="text-theme-accent font-bold">
-            <Link target="_blank" href="https://ondefend.com/">
-              OnDefend
-            </Link>
-          </span>
-        </p>
-      </section>
+      <AnimatePresence>
+        <section className="hero-info grid grid-cols-1 gap-3 place-items-center max-w-[1000px] pt-8">
+          <motion.h1
+            key="hero-title"
+            className="text-theme-text text-5xl font-bold backdrop-blur-sm"
+            initial={{ x: "100%", opacity: 0 }}
+            animate={{
+              opacity: 1,
+              x: 0,
+              transition: {
+                duration: 0.5,
+                // delay: 0.5,
+                transisiton: { ease: "easeIn" },
+              },
+            }}
+          >
+            Jesse Watson
+          </motion.h1>
+          <motion.h2
+            className="text-theme-text text-2xl font-bold backdrop-blur-sm"
+            initial={{ x: "-100%", opacity: 0 }}
+            animate={{
+              x: 0,
+              opacity: 1,
+              transition: {
+                duration: 0.5,
+                delay: 0.5,
+                transition: { ease: "easeIn" },
+              },
+            }}
+          >
+            Software Engineer
+          </motion.h2>
+          <motion.p
+            className="text-theme-text max-w-[586px] backdrop-blur-sm text-center"
+            initial={{ y: "100%", opacity: 0 }}
+            animate={{
+              y: 0,
+              opacity: 1,
+              transition: {
+                duration: 0.5,
+                delay: 1,
+                transition: { ease: "easeIn" },
+              },
+            }}
+          >
+            I&apos;m a software engineer specialized in the creation and design
+            of exceptional digital experiences. Currently, I&apos;m focused on
+            building automated penetration testing web tools at{" "}
+            <span className="text-theme-accent font-bold">
+              <Link target="_blank" href="https://ondefend.com/">
+                OnDefend
+              </Link>
+            </span>
+          </motion.p>
+        </section>
+      </AnimatePresence>
     </div>
   );
 };
