@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import classNames from "@/utils/classNames";
 import FlipImage from "./components/FlipImage";
 
@@ -14,10 +13,10 @@ const Hero = () => {
       )}
     >
       {/* image */}
-
       <FlipImage />
 
       {/* title */}
+      <p className="text-theme-text text-2xl font-bold">Jesse Watson</p>
       {/* elevator pitch */}
     </div>
   );

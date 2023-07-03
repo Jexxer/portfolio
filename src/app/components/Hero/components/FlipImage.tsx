@@ -9,7 +9,7 @@ const FlipImage = (props: Props) => {
     <div
       id="hero-img"
       className={classNames(
-        "w-[320px] h-[320px] bg-transparent cursor-pointer group perspective"
+        "w-[320px] h-[320px] bg-transparent group perspective"
       )}
     >
       <div className="relative preserve-3d group-hover:rotate-y-180 w-full h-full duration-1000 border-4 rounded-full border-theme-accent">

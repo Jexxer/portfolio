@@ -1,9 +1,30 @@
-import React from "react";
+"use client";
+import React, { HTMLAttributes, RefObject, useEffect, useRef } from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 type Props = {};
 
 const NavBar = (props: Props) => {
+  useEffect(() => {
+    let navbar = document.getElementById("navbar");
+    let prevScrollPosition = window.scrollY;
+    window.onscroll = function () {
+      if (!navbar) return;
+
+      const currentScrollPosition = window.scrollY;
+      const scrollDown = prevScrollPosition > currentScrollPosition;
+      if (scrollDown) {
+        navbar.classList.remove("-translate-y-16", "shadow-xl");
+      } else {
+        navbar.classList.add("-translate-y-16", "shadow-xl");
+      }
+      prevScrollPosition = currentScrollPosition;
+      if (currentScrollPosition === 0) {
+        navbar.classList.remove("shadow-xl");
+      }
+    };
+  }, []);
+
   const links = [
     {
       id: 1,
@@ -37,7 +58,10 @@ const NavBar = (props: Props) => {
     },
   ];
   return (
-    <nav className="bg-neutral-700 drop-shadow-sm sticky top-0 w-full">
+    <div
+      id="navbar"
+      className="sticky top-0 bg-theme-bg w-full transition duration-300 z-50"
+    >
       <div className="flex justify-between p-5 items-center h-16">
         <h2 className="font-bold text-white text-2xl">Jesse Watson</h2>
         <div className="flex">
@@ -50,7 +74,7 @@ const NavBar = (props: Props) => {
           ))}
         </div>
       </div>
-    </nav>
+    </div>
   );
 };
 
