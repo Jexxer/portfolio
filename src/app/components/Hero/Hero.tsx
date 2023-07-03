@@ -25,9 +25,9 @@ const Hero = () => {
           Software Engineer
         </h2>
         <p className="text-theme-text max-w-[586px] backdrop-blur-sm">
-          I'm a software engineer specialized in the creation and design of
-          exceptional digital experiences Currently, I'm focused on building
-          automated penetration testing web tools at{" "}
+          I&apos;m a software engineer specialized in the creation and design of
+          exceptional digital experiences Currently, I&apos;m focused on
+          building automated penetration testing web tools at{" "}
           <span className="text-theme-accent font-bold">
             <Link target="_blank" href="https://ondefend.com/">
               OnDefend
