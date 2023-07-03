@@ -1,5 +1,6 @@
 "use client";
 import { loadTextShape } from "tsparticles-shape-text";
+import { loadImageShape } from "tsparticles-shape-image";
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import type { Container, Engine } from "tsparticles-engine";
@@ -7,7 +8,7 @@ import { loadFull } from "tsparticles";
 
 const Background = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
-    await loadTextShape(engine);
+    await loadImageShape(engine);
     // console.log(engine);
     // you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
@@ -79,19 +80,22 @@ const Background = () => {
             },
           },
           shape: {
-            type: ["circle", "char"],
-            options: {
-              char: {
-                value: {
-                  0: "h",
-                  1: "c",
-                },
-                font: "Verdana",
-                style: "",
-                weight: 400,
-                fill: true,
-              },
+            type: ["image"],
+            image: {
+              src: "",
             },
+            // options: {
+            //   char: {
+            //     value: {
+            //       0: "h",
+            //       1: "c",
+            //     },
+            //     font: "Verdana",
+            //     style: "",
+            //     weight: 400,
+            //     fill: true,
+            //   },
+            // },
           },
           size: {
             value: { min: 1, max: 5 },
