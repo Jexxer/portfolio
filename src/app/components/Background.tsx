@@ -102,6 +102,31 @@ const Background = () => {
                 width: 250,
                 height: 30,
               },
+              {
+                src: "https://github.com/Jexxer/portfolio/blob/master/public/text/comment1.png?raw=true",
+                width: 350,
+                height: 30,
+              },
+              {
+                src: "https://github.com/Jexxer/portfolio/blob/master/public/text/comment2.png?raw=true",
+                width: 350,
+                height: 30,
+              },
+              {
+                src: "https://github.com/Jexxer/portfolio/blob/master/public/text/comment3.png?raw=true",
+                width: 350,
+                height: 30,
+              },
+              {
+                src: "https://github.com/Jexxer/portfolio/blob/master/public/text/comment4.png?raw=true",
+                width: 350,
+                height: 30,
+              },
+              {
+                src: "https://github.com/Jexxer/portfolio/blob/master/public/text/comment5.png?raw=true",
+                width: 350,
+                height: 30,
+              },
             ],
           },
           size: {
