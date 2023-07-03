@@ -82,7 +82,8 @@ const Background = () => {
           shape: {
             type: ["image"],
             image: {
-              src: "",
+              src: "https://github.com/Jexxer/portfolio/blob/master/public/text/jslog.png?raw=true",
+              replace_color: true,
             },
             // options: {
             //   char: {
