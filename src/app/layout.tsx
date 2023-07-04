@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="relative w-screen">
+      <body className="relative w-screen bg-theme-bg">
         <Background />
         {children}
       </body>
