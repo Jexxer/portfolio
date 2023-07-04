@@ -130,7 +130,10 @@ const Background = () => {
             ],
           },
           size: {
-            value: 75,
+            value: {
+              min: 50,
+              max: 76,
+            },
           },
         },
       }}
