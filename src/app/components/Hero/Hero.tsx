@@ -26,7 +26,7 @@ const Hero = () => {
         <AnimatePresence>
           <motion.h1
             key="hero-name"
-            className="text-theme-text text-5xl font-bold backdrop-blur-sm"
+            className="text-theme-text text-5xl font-bold backdrop-blur-sm border-2"
             initial={{ x: "100%", opacity: 0 }}
             animate={{
               opacity: 1,
