@@ -1,5 +1,4 @@
 "use client";
-import { loadTextShape } from "tsparticles-shape-text";
 import { loadImageShape } from "tsparticles-shape-image";
 import { useCallback } from "react";
 import Particles from "react-tsparticles";

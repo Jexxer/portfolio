@@ -20,7 +20,7 @@ const FlipImage = (props: Props) => {
       );
     };
     animateImage();
-  }, []);
+  }, [scope, animate]);
 
   return (
     <AnimatePresence>
