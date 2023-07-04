@@ -26,7 +26,7 @@ const Hero = () => {
       <AnimatePresence>
         <motion.section
           key="hero-section"
-          className="hero-info grid grid-cols-1 gap-3 place-items-center max-w-[1000px] pt-8"
+          className="hero-info grid grid-cols-1 gap-3 place-items-center max-w-[1000px] pt-8 overflow-x-hidden"
         >
           <motion.h1
             key="hero-name"
