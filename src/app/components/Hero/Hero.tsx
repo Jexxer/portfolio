@@ -16,8 +16,7 @@ const Hero = () => {
         "mt-8",
         "md:mt-12",
         "lg:mt-16",
-        "snap-start",
-        "border-2"
+        "snap-start"
       )}
     >
       {/* image */}
@@ -31,7 +30,7 @@ const Hero = () => {
           <motion.h1
             key="hero-name"
             className="text-theme-text text-5xl font-bold backdrop-blur-sm"
-            initial={{ x: "100%", opacity: 1 }}
+            initial={{ x: "100%", opacity: 0 }}
             animate={{
               opacity: 1,
               x: 0,
