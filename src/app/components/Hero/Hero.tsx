@@ -22,11 +22,11 @@ const Hero = () => {
       {/* image */}
       <FlipImage />
 
-      <section className="hero-info grid grid-cols-1 gap-3 place-items-center max-w-[1000px] pt-8">
+      <section className="hero-info grid grid-cols-1 gap-3 place-items-center max-w-[1000px] pt-8 border-2">
         <AnimatePresence>
           <motion.h1
             key="hero-name"
-            className="text-theme-text text-5xl font-bold backdrop-blur-sm border-2"
+            className="text-theme-text text-5xl font-bold backdrop-blur-sm"
             initial={{ x: "100%", opacity: 0 }}
             animate={{
               opacity: 1,
