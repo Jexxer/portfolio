@@ -24,7 +24,7 @@ const Hero = () => {
 
       <section className="hero-info grid grid-cols-1 gap-3 place-items-center max-w-[1000px] pt-8">
         <AnimatePresence>
-          <motion.h1
+          {/* <motion.h1
             key="hero-name"
             className="text-theme-text text-5xl font-bold backdrop-blur-sm"
             initial={{ x: "100%", opacity: 0 }}
@@ -39,7 +39,7 @@ const Hero = () => {
             }}
           >
             Jesse Watson
-          </motion.h1>
+          </motion.h1> */}
           <motion.h2
             key="hero-title"
             className="text-theme-text text-2xl font-bold backdrop-blur-sm"

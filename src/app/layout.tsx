@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="">
-      <body className="w-full bg-theme-bg outline-2 border-2">
+      <body className="w-full bg-theme-bg">
         <Background />
         {children}
       </body>
