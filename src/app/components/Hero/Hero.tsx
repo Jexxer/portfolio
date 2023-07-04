@@ -21,10 +21,10 @@ const Hero = () => {
       {/* image */}
       <FlipImage />
 
-      <AnimatePresence>
-        <section className="hero-info grid grid-cols-1 gap-3 place-items-center max-w-[1000px] pt-8">
+      <section className="hero-info grid grid-cols-1 gap-3 place-items-center max-w-[1000px] pt-8">
+        <AnimatePresence>
           <motion.h1
-            key="hero-title"
+            key="hero-name"
             className="text-theme-text text-5xl font-bold backdrop-blur-sm"
             initial={{ x: "100%", opacity: 0 }}
             animate={{
@@ -32,7 +32,7 @@ const Hero = () => {
               x: 0,
               transition: {
                 duration: 0.5,
-                // delay: 0.5,
+                delay: 2,
                 transisiton: { ease: "easeIn" },
               },
             }}
@@ -40,6 +40,7 @@ const Hero = () => {
             Jesse Watson
           </motion.h1>
           <motion.h2
+            key="hero-title"
             className="text-theme-text text-2xl font-bold backdrop-blur-sm"
             initial={{ x: "-100%", opacity: 0 }}
             animate={{
@@ -47,7 +48,7 @@ const Hero = () => {
               opacity: 1,
               transition: {
                 duration: 0.5,
-                delay: 0.5,
+                delay: 2.5,
                 transition: { ease: "easeIn" },
               },
             }}
@@ -55,6 +56,7 @@ const Hero = () => {
             Software Engineer
           </motion.h2>
           <motion.p
+            key="hero-intro"
             className="text-theme-text max-w-[586px] backdrop-blur-sm text-center"
             initial={{ y: "100%", opacity: 0 }}
             animate={{
@@ -62,7 +64,7 @@ const Hero = () => {
               opacity: 1,
               transition: {
                 duration: 0.5,
-                delay: 1,
+                delay: 3,
                 transition: { ease: "easeIn" },
               },
             }}
@@ -76,8 +78,8 @@ const Hero = () => {
               </Link>
             </span>
           </motion.p>
-        </section>
-      </AnimatePresence>
+        </AnimatePresence>
+      </section>
     </div>
   );
 };
