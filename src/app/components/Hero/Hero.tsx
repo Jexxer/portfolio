@@ -23,11 +23,11 @@ const Hero = () => {
       {/* image */}
       <FlipImage />
 
-      <AnimatePresence>
-        <motion.section
-          key="hero-section"
-          className="hero-info grid grid-cols-1 gap-3 place-items-center max-w-[1000px] pt-8 overflow-x-hidden"
-        >
+      <section
+        key="hero-section"
+        className="hero-info grid grid-cols-1 gap-3 place-items-center max-w-[1000px] pt-8 overflow-x-clip"
+      >
+        <AnimatePresence>
           <motion.h1
             key="hero-name"
             className="text-theme-text text-5xl font-bold backdrop-blur-sm"
@@ -83,8 +83,8 @@ const Hero = () => {
               </Link>
             </span>
           </motion.p>
-        </motion.section>
-      </AnimatePresence>
+        </AnimatePresence>
+      </section>
     </div>
   );
 };
