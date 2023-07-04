@@ -15,7 +15,8 @@ const Hero = () => {
         "relative",
         "mt-8",
         "md:mt-12",
-        "lg:mt-16"
+        "lg:mt-16",
+        "snap-start"
       )}
     >
       {/* image */}
