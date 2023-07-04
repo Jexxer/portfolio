@@ -16,7 +16,7 @@ const FlipImage = (props: Props) => {
         {
           scale: 1,
         },
-        { duration: 1, delay: 1 }
+        { duration: 0.5, delay: 0.5 }
       );
     };
     animateImage();
@@ -30,12 +30,12 @@ const FlipImage = (props: Props) => {
         className={classNames(
           "w-[320px] h-[320px] bg-transparent group perspective"
         )}
-        initial={{ y: "-100%", opacity: 0, scale: 2 }}
+        initial={{ y: "-100%", opacity: 0, scale: 0.5 }}
         animate={{
           opacity: 1,
           y: 0,
           transition: {
-            duration: 1,
+            duration: 0.5,
             transition: { ease: "easeIn" },
           },
         }}
@@ -52,7 +52,7 @@ const FlipImage = (props: Props) => {
           </div>
           <div className="absolute rotate-y-180 backface-hidden w-full h-full">
             <Image
-              src="/casuallyworking.jpg"
+              src="/aiheadshot.png"
               alt="hero"
               width={320}
               height={320}

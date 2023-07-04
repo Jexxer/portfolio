@@ -32,7 +32,7 @@ const Hero = () => {
               x: 0,
               transition: {
                 duration: 0.5,
-                delay: 2,
+                delay: 1,
                 transisiton: { ease: "easeIn" },
               },
             }}
@@ -48,7 +48,7 @@ const Hero = () => {
               opacity: 1,
               transition: {
                 duration: 0.5,
-                delay: 2.5,
+                delay: 1.5,
                 transition: { ease: "easeIn" },
               },
             }}
@@ -64,7 +64,7 @@ const Hero = () => {
               opacity: 1,
               transition: {
                 duration: 0.5,
-                delay: 3,
+                delay: 2,
                 transition: { ease: "easeIn" },
               },
             }}
