@@ -16,13 +16,14 @@ const Hero = () => {
         "mt-8",
         "md:mt-12",
         "lg:mt-16",
-        "snap-start"
+        "snap-start",
+        "border-2"
       )}
     >
       {/* image */}
       <FlipImage />
 
-      <section className="hero-info grid grid-cols-1 gap-3 place-items-center max-w-[1000px] pt-8 border-2">
+      <section className="hero-info grid grid-cols-1 gap-3 place-items-center max-w-[1000px] pt-8">
         <AnimatePresence>
           <motion.h1
             key="hero-name"
