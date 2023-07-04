@@ -27,7 +27,7 @@ const Hero = () => {
           <motion.h1
             key="hero-name"
             className="text-theme-text text-5xl font-bold backdrop-blur-sm"
-            initial={{ x: "100%", opacity: 0 }}
+            initial={{ x: "100%", opacity: 1 }}
             animate={{
               opacity: 1,
               x: 0,
