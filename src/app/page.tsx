@@ -12,7 +12,6 @@ const App = () => {
         {/* <Background /> */}
         {/* <ContentCard /> */}
         <Hero />
-        <div className="h-screen bg-transparent"></div>
       </div>
     </div>
   );
