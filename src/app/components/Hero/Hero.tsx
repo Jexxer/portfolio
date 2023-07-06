@@ -10,7 +10,7 @@ const Hero = () => {
     <div
       id="hero-container"
       className={classNames(
-        "min-h-[calc(100vh-4rem)] w-full",
+        "min-h-[calc(100vh-8rem)] w-full",
         "flex flex-col items-center",
         "relative",
         "mt-8",

@@ -1,5 +1,5 @@
 import Hero from "./components/Hero/Hero";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/Navbar/NavBar";
 
 const App = () => {
   return (
@@ -18,5 +18,3 @@ const App = () => {
 };
 
 export default App;
-
-console.log;

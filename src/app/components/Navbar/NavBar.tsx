@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import HamburgerMenu from "./HamburgerMenu/HamburgerMenu";
 
 type Props = {};
 
@@ -28,19 +29,24 @@ const NavBar = (props: Props) => {
 
   const links = [
     {
+      id: 0,
+      name: "About",
+      href: "#about",
+    },
+    {
       id: 1,
       name: "Projects",
-      href: "/projects",
+      href: "#projects",
     },
     {
       id: 2,
       name: "Education",
-      href: "/education",
+      href: "#education",
     },
     {
       id: 3,
       name: "Work History",
-      href: "/work-history",
+      href: "#work-history",
     },
   ];
 
@@ -61,20 +67,29 @@ const NavBar = (props: Props) => {
   return (
     <div
       id="navbar"
-      className="sticky top-0 bg-theme-bg w-full transition duration-300 z-50"
+      className="sticky top-0 w-full transition duration-300 z-50"
     >
-      <div className="flex justify-between p-5 items-center h-16">
+      {/* Desktop */}
+      <div className="hidden justify-between p-5 items-center h-16 md:flex lg:flex">
         <h2 className="font-bold text-white text-2xl">Jesse Watson</h2>
-        <div className="flex">
-          {socials.map((link) => (
-            <div key={link.id} className="mx-2">
-              <a href={link.href} target="_blank">
-                <div>{link.icon}</div>
+        <div className="flex items-center">
+          {links.map((link) => (
+            <div key={link.id} className="mx-3">
+              <a href={link.href} className="text-theme-text">
+                {link.name}
               </a>
             </div>
           ))}
+          <div>
+            <button className="border-2 border-theme-accent text-theme-accent rounded py-1 px-2 shadow font-bold hover:bg-theme-accent hover:text-theme-bg duration-300 hover:scale-110">
+              Resume
+            </button>
+          </div>
         </div>
       </div>
+
+      {/* Mobile */}
+      <HamburgerMenu />
     </div>
   );
 };
