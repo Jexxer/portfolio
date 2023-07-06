@@ -10,13 +10,12 @@ const Hero = () => {
     <div
       id="hero-container"
       className={classNames(
-        "min-h-[calc(100vh-8rem)] w-full",
+        "min-h-[calc(100dvh-8rem)] w-full",
         "flex flex-col items-center",
         "relative",
         "mt-8",
         "md:mt-12",
-        "lg:mt-16",
-        "overflow-y-auto"
+        "lg:mt-16"
       )}
     >
       {/* image */}
