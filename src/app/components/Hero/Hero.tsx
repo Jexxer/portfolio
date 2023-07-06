@@ -16,7 +16,7 @@ const Hero = () => {
         "mt-8",
         "md:mt-12",
         "lg:mt-16",
-        "snap-start"
+        "overflow-y-auto"
       )}
     >
       {/* image */}
