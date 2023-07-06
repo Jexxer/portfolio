@@ -5,10 +5,7 @@ const App = () => {
   return (
     <div className="w-full">
       <NavBar />
-      <div
-        id="home-content"
-        className="px-[50px] md:px-[100px] lg:px-[150px] snap-y"
-      >
+      <div id="home-content" className="px-[50px] md:px-[100px] lg:px-[150px]">
         {/* <Background /> */}
         {/* <ContentCard /> */}
         <Hero />

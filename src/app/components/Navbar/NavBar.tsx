@@ -2,6 +2,8 @@
 import React, { useEffect } from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import HamburgerMenu from "./HamburgerMenu/HamburgerMenu";
+import classNames from "@/utils/classNames";
+import { links } from "./data";
 
 type Props = {};
 
@@ -27,29 +29,6 @@ const NavBar = (props: Props) => {
     };
   }, []);
 
-  const links = [
-    {
-      id: 0,
-      name: "About",
-      href: "#about",
-    },
-    {
-      id: 1,
-      name: "Projects",
-      href: "#projects",
-    },
-    {
-      id: 2,
-      name: "Education",
-      href: "#education",
-    },
-    {
-      id: 3,
-      name: "Work History",
-      href: "#work-history",
-    },
-  ];
-
   const socials = [
     {
       id: 1,
@@ -74,8 +53,18 @@ const NavBar = (props: Props) => {
         <h2 className="font-bold text-white text-2xl">Jesse Watson</h2>
         <div className="flex items-center">
           {links.map((link) => (
-            <div key={link.id} className="mx-3">
-              <a href={link.href} className="text-theme-text">
+            <div
+              key={link.id}
+              className={classNames("mx-3", "hover:scale-110 duration-300")}
+            >
+              <a
+                href={link.href}
+                className={classNames(
+                  "text-theme-text",
+                  "hover:text-theme-accent",
+                  "duration-300"
+                )}
+              >
                 {link.name}
               </a>
             </div>
