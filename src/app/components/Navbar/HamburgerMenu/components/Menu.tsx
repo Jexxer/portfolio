@@ -36,7 +36,7 @@ const Menu = (props: Props) => {
           key="menu-container"
           className={classNames(
             "absolute top-0 right-0",
-            "w-screen h-screen",
+            "w-screen h-[100dvh]",
             "bg-black/80"
           )}
           onClick={handleClose}
