@@ -58,8 +58,21 @@ const Menu = (props: Props) => {
               key="list-container"
               className="w-full h-[60%] grid grid-cols-1 place-items-center text-center"
             >
-              {links.map((link) => (
-                <motion.li key={link.id} className="text-theme-text">
+              {links.map((link, index) => (
+                <motion.li
+                  key={link.id}
+                  className="text-theme-text"
+                  initial={{ opacity: 0, y: "-100%" }}
+                  animate={{
+                    opacity: 1,
+                    y: 0,
+                    transition: {
+                      duration: 0.25,
+                      delay: 0.25 * (index / 2) + 0.5,
+                      transition: { ease: "easeIn" },
+                    },
+                  }}
+                >
                   <motion.a
                     key="menu-list-item"
                     href={link.href}
