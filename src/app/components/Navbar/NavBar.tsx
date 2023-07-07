@@ -46,7 +46,7 @@ const NavBar = (props: Props) => {
   return (
     <div
       id="navbar"
-      className="sticky top-0 w-full transition duration-300 z-50"
+      className="sticky top-0 w-full transition duration-300 z-50 overflow-x-clip"
     >
       {/* Desktop */}
       <div className="hidden justify-between p-5 items-center h-16 md:flex lg:flex">
