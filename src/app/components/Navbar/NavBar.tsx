@@ -18,7 +18,7 @@ const NavBar = (props: Props) => {
       const scrollUp = prevScrollPosition > currentScrollPosition;
       if (scrollUp) {
         navbar.classList.remove("-translate-y-16", "transparent");
-      } else {
+      } else if (!scrollUp) {
         navbar.classList.add("-translate-y-16", "shadow-xl", "bg-theme-bg");
       }
       prevScrollPosition = currentScrollPosition;
@@ -50,8 +50,8 @@ const NavBar = (props: Props) => {
     >
       {/* Desktop */}
       <div className="hidden justify-between p-5 items-center h-16 md:flex lg:flex">
-        <h2 className="font-bold text-white text-2xl">Jesse Watson</h2>
-        <div className="flex items-center">
+        <h2 className="font-bold text-theme-text text-2xl">Jesse Watson</h2>
+        <div className="flex items-center backdrop-blur-sm">
           {links.map((link) => (
             <div
               key={link.id}
