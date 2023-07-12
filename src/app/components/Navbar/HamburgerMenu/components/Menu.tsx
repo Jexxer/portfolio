@@ -82,6 +82,27 @@ const Menu = (props: Props) => {
                   </motion.a>
                 </motion.li>
               ))}
+              <motion.li
+                key="resume-button"
+                className="text-theme-text"
+                initial={{ opacity: 0, y: "-100%" }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    duration: 0.25,
+                    delay: 0.25 * (links.length / 2) + 0.5,
+                    transition: { ease: "easeIn" },
+                  },
+                }}
+              >
+                <motion.button
+                  key="resume-btn"
+                  className="border-2 border-theme-accent text-theme-accent rounded shadow font-bold hover:bg-theme-accent text-2xl self-center pt-2 pb-3 px-6"
+                >
+                  Resume
+                </motion.button>
+              </motion.li>
             </motion.ul>
           </motion.div>
         </motion.div>
